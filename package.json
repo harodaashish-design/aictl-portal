@@ -1,0 +1,16 @@
+{
+  "name": "aicte-portal-fullstack",
+  "version": "1.0.0",
+  "description": "AICTE Portal Clone - Full Stack Academic Major Project",
+  "private": true,
+  "scripts": {
+    "dev": "node start-dev.js",
+    "start": "node start-dev.js",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start:backend": "npm --prefix backend start",
+    "build:frontend": "npm --prefix frontend run build",
+    "seed": "npm --prefix backend run seed"
+  }
+}

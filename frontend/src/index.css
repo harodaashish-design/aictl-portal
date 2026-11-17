@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  .high-contrast {
+    filter: contrast(1.18);
+  }
+
+  .high-contrast body,
+  .high-contrast .bg-white {
+    background-color: #ffffff !important;
+  }
+
+  .screen-reader-focus *:focus-visible {
+    outline: 3px solid #f37021 !important;
+    outline-offset: 2px;
+  }
+}
+
+.aicte-btn-orange {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-[#F9AF1B] to-[#F38B00] px-6 py-2 text-xs sm:text-sm font-bold text-white shadow-sm transition-all duration-150 hover:from-[#F39C0D] hover:to-[#E07300] hover:shadow active:scale-[0.99] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F37021];
+}
+
+.aicte-pill-btn {
+  @apply inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-to-b from-[#FCB917] to-[#F39200] px-5 py-2 text-xs font-bold text-white shadow-sm transition-all duration-150 hover:from-[#F3A50D] hover:to-[#E07900] hover:shadow active:scale-[0.99] text-center;
+}
+
+.aicte-sky-hero {
+  background: linear-gradient(180deg, #98CEF4 0%, #CBE7FA 38%, #EBF6FD 72%, #D4ECFB 100%);
+}
